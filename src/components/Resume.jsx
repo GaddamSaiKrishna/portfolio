@@ -1,5 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import isteLogo from '../../public/iste.png';
+import mesaLogo from '../../public/mesa.png';
+import nssLogo from '../../public/nss.png';
 
 const sectionVariant = {
   hidden: { opacity: 0, y: 40 },
@@ -50,19 +53,19 @@ const Resume = () => (
       <h2>Positions of Responsibility</h2>
       <div className="positions-flex">
         <div className="position-item">
-          <div className="position-icon"><img src="/iste.png" alt="ISTE Logo" style={{width: '2.1rem', height: '2.1rem'}} /></div>
+          <div className="position-icon"><img src={isteLogo} alt="ISTE Logo" /></div>
           <div>
             <b>Treasurer & Web Developer | ISTE Students’ Chapter NIT Durgapur</b> (Mar 2024 - present)<br/>Developed the official ISTE website and organized hackathons/workshops for 150 students. Preparing a website for an upcoming event (CIT). Honed technical and collaborative skills.
           </div>
         </div>
         <div className="position-item">
-          <div className="position-icon"><img src="/mesa.png" alt="MESA Logo" style={{width: '2.1rem', height: '2.1rem'}} /></div>
+          <div className="position-icon"><img src={mesaLogo} alt="MESA Logo" /></div>
           <div>
             <b>Convener & Graphic Designer | Mechanical Engineering Students’ Association, NIT Durgapur</b> (Oct 2023 - present)<br/>Created the MESA website and designed posters featured on MESA social media. Organized events with 70+ students, showcasing teamwork.
           </div>
         </div>
         <div className="position-item">
-          <div className="position-icon"><img src="/nss.png" alt="NSS Logo" style={{width: '2.1rem', height: '2.1rem'}} /></div>
+          <div className="position-icon"><img src={nssLogo} alt="NSS Logo" /></div>
           <div>
             <b>Unit Leader & Volunteer | National Service Scheme, NIT Durgapur</b> (Mar 2023 - present)<br/>Organized/participated in events (YuvaSamvad, HindiPakhwada, Har Ghar Tiranga, parade). Delivered a speech to 200 people at Yuva Samvad (prize winner). Coordinated Swachata Hi Seva with 100 participants. Enhanced public speaking skills.
           </div>
