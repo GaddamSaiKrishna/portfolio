@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const navLinks = [
   { label: 'Home', to: 'home' },
@@ -19,7 +19,10 @@ const scrollToSection = (id) => {
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
-  const [dark, setDark] = useState(false);
+  const [dark, setDark] = useState(true);
+  useEffect(() => {
+    document.body.classList.add('dark-mode');
+  }, []);
 
   const toggleDarkMode = () => {
     setDark((d) => {
