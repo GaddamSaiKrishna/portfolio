@@ -31,12 +31,30 @@ const Navbar = () => {
       }
       return newMode;
     });
+    setOpen(false);
   };
 
   return (
     <nav className="navbar">
       <div className="navbar__logo" onClick={() => scrollToSection('home')}>
-        <span style={{ color: 'var(--accent)', fontWeight: 700 }}>Sai Krishna</span>
+        <div style={{
+          width: 44,
+          height: 44,
+          borderRadius: '50%',
+          background: 'var(--card-bg)',
+          border: '2.5px solid var(--accent)',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          fontWeight: 700,
+          fontSize: '1.25rem',
+          color: 'var(--primary)',
+          boxShadow: '0 2px 8px #a084ee33',
+          letterSpacing: '0.05em',
+          marginRight: 8,
+        }}>
+          SK
+        </div>
       </div>
       <div className={`navbar__links${open ? ' open' : ''}`}>
         {navLinks.map((link) => (
