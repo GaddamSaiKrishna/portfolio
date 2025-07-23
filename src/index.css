@@ -265,6 +265,7 @@ button:hover {
   flex-wrap: wrap;
   gap: 1rem;
   margin-top: 0.5rem;
+  justify-content: center;
 }
 .project-link {
   display: flex;

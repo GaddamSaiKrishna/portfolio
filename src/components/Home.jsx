@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import profilePic from '../assets/pp.jpg';
-import resume from '/public/resume.pdf';
+// import resume from '/public/resume.pdf';
 
 
 
@@ -93,7 +93,7 @@ const Home = () => (
         animate={false}
         style={{ display: 'flex', gap: 16, justifyContent: 'flex-start', zIndex: 1 }}
       >
-        <a href={resume} download>
+        <a href="/resume.pdf" download>
           <button style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
             <svg height="1.2em" viewBox="0 0 24 24" fill="currentColor" style={{verticalAlign: 'middle'}} aria-label="Resume"><path d="M5 20h14v-2H5v2zm7-18C6.48 2 2 6.48 2 12c0 5.52 4.48 10 10 10s10-4.48 10-10C22 6.48 17.52 2 12 2zm1 15h-2v-6H8l4-4 4 4h-3v6z"/></svg>
             Resume
